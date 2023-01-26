@@ -1,0 +1,19 @@
+What are the major security challenges for AWS Lambda ?
+Ans:
+AWS Lambda, a serverless computing service, can present several security challenges, including:
+
+Unauthorized access: AWS Lambda functions can be triggered by external sources, such as web or mobile applications, making it important to properly secure and authenticate these triggers to prevent unauthorized access to the functions.
+
+Data leakage: AWS Lambda functions may have access to sensitive data, such as database credentials or encryption keys. It is important to ensure that this data is properly secured and protected from leakage.
+
+Injection attacks: AWS Lambda functions may be vulnerable to injection attacks, such as SQL injection or command injection, if they are not properly protected.
+
+Misconfigured permissions: Misconfigured permissions on the AWS Lambda function or the resources it accesses can lead to unauthorized access or data leakage.
+
+Third-party dependencies: AWS Lambda functions may rely on third-party libraries or dependencies, which can introduce security vulnerabilities. It is important to keep these dependencies updated and to monitor for any security vulnerabilities.
+
+Limited visibility and control: Because AWS Lambda is a serverless service, you may have limited visibility and control over the underlying infrastructure. This can make it more difficult to detect and respond to security incidents.
+
+Cold start: AWS Lambda function may have a cold start issue which may impact the performance and security of function.
+
+To mitigate these challenges, it is important to follow best practices for securing AWS Lambda, including using IAM roles and policies to control access, encrypting sensitive data, and regularly monitoring for security issues. Additionally, it is important to use security tools such as AWS Config and AWS Security Hub to monitor for security incidents and vulnerabilities.
