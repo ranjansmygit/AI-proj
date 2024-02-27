@@ -49,6 +49,4 @@ def check_dependencies(function_name):
 check_injection_attacks('my_lambda_function')
 check_unauthorized_access('my_lambda_function')
 check_dependencies('my_lambda_function')
-##This script uses the boto3 library to interact with the AWS Lambda service, as well as the re library for regular expression matching.
-
-The check_injection_attacks function uses the get_function method of the lambda_client to retrieve the code of the specified Lambda function, and then uses regular expressions to search for patterns indicative of SQL injection and command
+##This script uses the boto3 library to interact with the AWS Lambda service, as well as the re library for regular expression matching. The check_injection_attacks function uses the get_function method of the lambda_client to retrieve the code of the specified Lambda function, and then uses regular expressions to search for patterns indicative of SQL injection and command
